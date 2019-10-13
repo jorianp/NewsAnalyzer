@@ -1,0 +1,33 @@
+.intro__title {
+    width: 608px;
+    margin: 0;
+    padding-top: 160px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 64px;
+    
+    color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .intro__title {
+        width: 385px;
+        padding-top: 104px;
+
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .intro__title {
+        width: 285px;
+        padding-top: 86px;
+
+        font-size: 36px;
+        line-height: 40px;
+    }
+}

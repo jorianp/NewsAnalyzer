@@ -5,6 +5,8 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 module.exports = {
     entry: { 
         main: './src/index.js',
+        about: './src/about.js',
+        analytics: './src/analytics.js' 
     },
     output: {
         filename: '[name].[chunkhash].js',
@@ -44,6 +46,18 @@ module.exports = {
             hash: true,
             template: './src/index.html',
             filename: 'index.html'
+          }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/about.html',
+            filename: 'about.html'
+          }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/analytics.html',
+            filename: 'analytics.html'
           }),
         new WebpackMd5Hash()
     ]

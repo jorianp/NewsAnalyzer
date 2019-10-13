@@ -1,0 +1,27 @@
+@import url('./__title/intro__title.css');
+@import url('./__subtitle/intro__subtitle.css');
+@import url('./__search/intro__search.css');
+@import url('./__input/intro__input.css');
+@import url('./__search-button/intro__search-button.css');
+@import url('./__content/intro__content.css');
+
+.intro {
+    width: 100%;
+    height: 576px;
+    background-image: url(../../../images/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .intro {
+        height: 400px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .intro {
+        height: 536px;
+    }
+}
+

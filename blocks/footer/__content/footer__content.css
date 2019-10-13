@@ -1,0 +1,25 @@
+.footer__content {
+    width: 1235px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 26px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer__content {
+        width: 686px;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .footer__content {
+        width: 290px;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+    }
+}

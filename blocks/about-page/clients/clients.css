@@ -1,0 +1,8 @@
+@import url('./__content/clients__content.css');
+@import url('./__title/clients__title.css');
+@import url('./__text/clients__text.css');
+
+.clients {
+    width: 100%;
+    background: #ffffff;
+}

@@ -1,0 +1,104 @@
+.table__progress {
+    width: 1131px;
+    height: 24px;
+    margin-left: 55px;
+    display: flex;
+    background: #2F71E5;
+}
+
+#mon {
+    width: 184px;
+}
+
+#tue {
+    width: 256px;
+}
+
+#wed {
+    width: 120px;
+}
+
+#thu {
+    width: 424px;
+}
+
+#fri {
+    width: 528px;
+}
+
+#sat {
+    width: 816px;
+}
+
+#sun {
+    width: 368px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .table__progress {
+        width: 686px;
+    }
+
+    #mon {
+        width: 128.75px;
+    }
+    
+    #tue {
+        width: 179.14px;
+    }
+    
+    #wed {
+        width: 83.97px;
+    }
+    
+    #thu {
+        width: 296.7px;
+    }
+    
+    #fri {
+        width: 369.47px;
+    }
+    
+    #sat {
+        width: 571px;
+    }
+    
+    #sun {
+        width: 257.51px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .table__progress {
+        width: 208px;
+        margin-left: 27px;
+    }
+
+    #mon {
+        width: 46.9px;
+    }
+    
+    #tue {
+        width: 65.25px;
+    }
+    
+    #wed {
+        width: 30.59px;
+    }
+    
+    #thu {
+        width: 108.08px;
+    }
+    
+    #fri {
+        width: 134.59px;
+    }
+    
+    #sat {
+        width: 208px;
+    }
+    
+    #sun {
+        width: 93.8px;
+    }
+}
