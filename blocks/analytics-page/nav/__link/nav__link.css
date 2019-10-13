@@ -8,3 +8,11 @@
     color: #1A1B22;
     text-decoration: none;
 }
+
+.nav__link_slash {
+    color: #B6BCBF;
+}
+
+.nav__link_slash:hover {
+    color: #1A1B22;
+}

@@ -15,6 +15,14 @@
     box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
 }
 
+.intro__search-button:hover {
+    background: #347EFF;
+}
+
+.intro__search-button:active {
+    background: #2A65CC;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .intro__search-button {
         width: 160px;

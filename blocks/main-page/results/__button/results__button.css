@@ -16,6 +16,11 @@
     border-radius: 80px;
 }
 
+.results__button:hover {
+    background: #E8E8E9;
+    opacity: 0.9;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .results__button {
         width: 240px;

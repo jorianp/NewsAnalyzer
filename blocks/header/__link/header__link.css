@@ -7,6 +7,7 @@
 
     color: #ffffff;
     text-decoration: none;
+    border-bottom: 3px solid #ffffff;
 }
 
 .header__link-b {
@@ -14,7 +15,38 @@
 }
 
 .header__link_about {
+    font-weight: normal;
     margin-left: 34px;
+    border: none;
+    color: #B6BCBF;
+}
+
+.header__link_about:hover {
+    color: #ffffff;
+}
+
+.header__link-b {
+    font-weight: normal;
+    color: #B6BCBF;
+}
+
+#about .header__link_about {
+    font-weight: 500;
+    color: #1A1B22;
+    border-bottom: 3px solid #1A1B22;
+}
+
+#about .header__link:hover {
+    color: #1A1B22;
+}
+
+#analytics .header__link-b {
+    color: #B6BCBF;
+    font-weight: normal;
+}
+
+#analytics .header__link-b:hover {
+    color: #1A1B22;
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
