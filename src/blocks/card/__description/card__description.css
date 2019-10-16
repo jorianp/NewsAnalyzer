@@ -1,0 +1,36 @@
+.card__description {
+    width: 352px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .card__description {
+        width: 252px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card__description {
+        width: 192px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .card__description {
+        width: 352px;
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .card__description {
+        width: 256px;
+        margin-top: 12px;
+    }
+}

@@ -7,18 +7,18 @@
     <meta name="author" content="Eliseev Alexey">
     <meta name="description" content="Страница с аналитикой новостей">
     <title>Analytics</title>
-    <link rel="shortcut icon" href="<%=require('../images/favicon-analytics.png')%>" type="image/png">
+    <link rel="shortcut icon" href="<%=require('./images/favicon-analytics.png')%>" type="image/png">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>">
 </head>
 <body>
     <div class="page">
         
-        <header id="analytics" class="header header-b">
+        <header id="analytics" class="header">
             <div class="header__content">
-                <a href="./index.html" class="header__logo header__logo-b"><p>NewsAnalyzer</p></a>
+                <a href="./index.html" class="header__logo">NewsAnalyzer</a>
                 <div class="header__links">
-                    <a href="./index.html" class="header__link header__link-b"><p>Главная</p></a>
-                    <a href="./about.html" class="header__link header__link-b header__link_about"><p>О проекте</p></a>
+                    <a href="./index.html" class="header__link">Главная</a>
+                    <a href="./about.html" class="header__link header__link_about">О проекте</a>
                 </div>
             </div>
         </header>
@@ -136,5 +136,6 @@
         </footer>
 
     </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
 </body>
 </html>
