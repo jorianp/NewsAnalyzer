@@ -19,13 +19,22 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+                test: /\.css$/i,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../',
+                        }
+                    },
+                    'css-loader',
+                    'postcss-loader'
+                ]
             },
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                     'file-loader?name=./images/[name].[ext]', // указали папку, куда складывать изображения
+                     'file-loader?name=images/[name].[ext]', // указали папку, куда складывать изображения
                      {
                          loader: 'image-webpack-loader'
                      },
@@ -33,13 +42,13 @@ module.exports = {
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
-                loader: `file-loader?name=./vendor/fonts/[name].[ext]`
+                loader: `file-loader?name=vendor/fonts/[name].[ext]`
             }
         ]
     },
     plugins: [ 
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css'
+            filename: './styles/[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
             inject: false,
