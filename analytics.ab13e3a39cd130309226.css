@@ -390,6 +390,9 @@
     src: url(./vendor/fonts/SourceSansProRegular.woff) format("woff");
 }
 .header__link {
+    margin-top: 30px;
+    margin-bottom: 26px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -399,10 +402,6 @@
     color: #ffffff;
     text-decoration: none;
     border-bottom: 3px solid #ffffff;
-}
-
-.header__link-b {
-    color: #000000;
 }
 
 .header__link_about {
@@ -416,7 +415,12 @@
     color: #ffffff;
 }
 
-.header__link-b {
+#about .header__link {
+    font-weight: normal;
+    color: #B6BCBF;
+}
+
+#analytics .header__link {
     font-weight: normal;
     color: #B6BCBF;
 }
@@ -431,17 +435,27 @@
     color: #1A1B22;
 }
 
-#analytics .header__link-b {
+#analytics .header__link {
     color: #B6BCBF;
     font-weight: normal;
 }
 
-#analytics .header__link-b:hover {
+#analytics .header__link:hover {
     color: #1A1B22;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header__link {
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
     .header__link {
+        margin-top: 16px;
+        margin-bottom: 16px;
+
         font-size: 16px;
     }
     .header__link_about {
@@ -453,6 +467,9 @@
     justify-content: space-around;
 }
 .header__logo {
+    margin-top: 30px;
+    margin-bottom: 26px;
+
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: bold;
@@ -463,12 +480,26 @@
     text-decoration: none;
 }
 
-.header__logo-b {
+#about .header__logo {
     color: #000000;
+}
+
+#analytics .header__logo {
+    color: #000000;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header__logo {
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
     .header__logo {
+        margin-top: 16px;
+        margin-bottom: 16px;
+
         font-size: 16px;
         line-height: 24px;
     }
@@ -480,9 +511,21 @@
     justify-content: space-between;
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .header__content {
+        width: 910px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .header__content {
         width: 686px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .header__content {
+        width: 380px;
     }
 }
 
@@ -497,7 +540,11 @@
     border-bottom: 1px solid #c2c2c2;
 }
 
-.header-b {
+#about {
+    position: relative;
+}
+
+#analytics {
     position: relative;
 }
 .footer__content {
@@ -510,11 +557,27 @@
     margin-bottom: 26px;
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .footer__content {
+        width: 910px;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .footer__content {
         width: 686px;
         margin-top: 21px;
         margin-bottom: 21px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .footer__content {
+        width: 380px;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
     }
 }
 
@@ -537,7 +600,7 @@
     color: #B6BCBF;
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .footer__copyrights {
         margin-top: 40px;
         order: 3;
@@ -556,7 +619,7 @@
     justify-content: space-between;
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .footer__icons {
         margin-top: -10px;
         align-self: baseline;
@@ -575,7 +638,7 @@
     color: #1A1B22;
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .footer__link {
         margin-top: 30px;
     }
@@ -586,7 +649,7 @@
     justify-content: space-between;
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .footer__links {
         width: 184px;
         flex-direction: column;
@@ -982,4 +1045,4 @@
         display: none;
     }
 }
-
+body{overflow-x:hidden}.page{position:relative}
