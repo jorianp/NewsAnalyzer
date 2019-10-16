@@ -352,42 +352,42 @@
     font-family: 'Roboto';
     font-style:  normal;
     font-weight: 400;
-    src: url(./vendor/fonts/roboto-regular-webfont.woff) format("woff");
+    src: url(../vendor/fonts/roboto-regular-webfont.woff) format("woff");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style:  normal;
     font-weight: 500;
-    src: url(./vendor/fonts/roboto-medium-webfont.woff) format("woff");
+    src: url(../vendor/fonts/roboto-medium-webfont.woff) format("woff");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style:  normal;
     font-weight: 100;
-    src: url(./vendor/fonts/Roboto-Thin.woff) format("woff");
+    src: url(../vendor/fonts/Roboto-Thin.woff) format("woff");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style:  normal;
     font-weight: 300;
-    src: url(./vendor/fonts/Roboto-Light.woff) format("woff");
+    src: url(../vendor/fonts/Roboto-Light.woff) format("woff");
 }
 
 @font-face {
     font-family: 'Roboto Slab';
     font-style:  normal;
     font-weight: 400;
-    src: url(./vendor/fonts/robotoslab-regular-webfont.woff) format("woff");
+    src: url(../vendor/fonts/robotoslab-regular-webfont.woff) format("woff");
 }
 
 @font-face {
     font-family: 'Source Sans Pro';
     font-style:  normal;
     font-weight: 400;
-    src: url(./vendor/fonts/SourceSansProRegular.woff) format("woff");
+    src: url(../vendor/fonts/SourceSansProRegular.woff) format("woff");
 }
 .header__link {
     margin-top: 30px;
