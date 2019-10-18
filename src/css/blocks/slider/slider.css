@@ -6,6 +6,7 @@
 @import url('./__pag/slider__pag.css');
 @import url('./__pagination/slider__pagination.css');
 @import url('./__title/slider__title.css');
+@import url('./__link/slider__link.css');
 
 .slider {
     background: #F5F6F7;

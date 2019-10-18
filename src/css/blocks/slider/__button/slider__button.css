@@ -6,6 +6,7 @@
     border-radius: 100%;
     outline: none;
     cursor: pointer;
+    border: 0;
 
     color: #FFFFFF;
 }
@@ -36,6 +37,7 @@
     }
     .slider__button_hide {
         display: block;
+        padding: 0;
         width: 290px;
         margin: auto;
         margin-top: 24px;
@@ -49,5 +51,6 @@
         line-height: 24px;
 
         color: #1A1B22;
+        text-decoration: none;
     }
 }
