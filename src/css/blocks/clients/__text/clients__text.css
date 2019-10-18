@@ -1,0 +1,26 @@
+.clients__text {
+    width: 815px;
+    margin: 0;
+    margin-top: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1A1B22;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .clients__text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .clients__text {
+        width: 100%;
+        margin-top: 16.46px;
+    }
+}

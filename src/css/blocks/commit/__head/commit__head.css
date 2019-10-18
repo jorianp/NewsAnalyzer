@@ -1,0 +1,12 @@
+.commit__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    .commit__head {
+        margin-left: 12px;
+    }
+}

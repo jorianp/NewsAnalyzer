@@ -1,0 +1,18 @@
+@import url('../results/__link/results__link.css');
+@import url('./__heading/slider__heading.css');
+@import url('./__button/slider__button.css');
+@import url('./__list/slider__list.css');
+@import url('./__main/slider__main.css');
+@import url('./__pag/slider__pag.css');
+@import url('./__pagination/slider__pagination.css');
+@import url('./__title/slider__title.css');
+
+.slider {
+    background: #F5F6F7;
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .slider {
+        padding-bottom: 32px;
+    }
+}

@@ -1,0 +1,13 @@
+.footer__icons {
+    width: 74px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer__icons {
+        margin-top: -10px;
+        align-self: baseline;
+        order: 2;
+    }
+}

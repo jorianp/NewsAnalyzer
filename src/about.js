@@ -1,1 +1,1 @@
-import './styles/about-page.css'
+import './css/about-page.css'

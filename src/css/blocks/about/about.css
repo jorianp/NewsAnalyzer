@@ -1,0 +1,52 @@
+@import url('./__avatar/about__avatar.css');
+@import url('./__description/about__description.css');
+@import url('./__text/about__text.css');
+@import url('./__title/about__title.css');
+
+
+.about {
+    width: 100%;
+    background: #ffffff;
+}
+
+.about {
+    width: 1235px;
+    margin: auto;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .about {
+        width: 910px;
+        margin-top: 40px;
+        margin-bottom: 66px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about {
+        width: 686px;
+        margin-top: 40px;
+        margin-bottom: 66px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .about {
+        width: 380px;
+        flex-direction: column;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .about {
+        width: 290px;
+        flex-direction: column;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+}

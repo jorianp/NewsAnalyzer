@@ -1,0 +1,25 @@
+.results__link {
+    display: flex;
+    align-items: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1A1B22;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .results__link {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .slider__heading .results__link {
+        display: none;
+    }
+}

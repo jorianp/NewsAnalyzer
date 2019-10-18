@@ -1,0 +1,13 @@
+@import url('./__avatar/commit__avatar.css');
+@import url('./__date/commit__date.css');
+@import url('./__head/commit__head.css');
+@import url('./__mail/commit__mail.css');
+@import url('./__main/commit__main.css');
+@import url('./__name/commit__name.css');
+@import url('./__text/commit__text.css');
+
+.commit {
+    background: #FFFFFF;
+    border-radius: 16px;
+    cursor: pointer;
+}

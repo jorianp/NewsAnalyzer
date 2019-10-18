@@ -1,0 +1,21 @@
+.slider__list {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 288px;
+    grid-gap: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slider__list {
+        grid-template-columns: 336px 336px;
+        grid-template-rows: 242px;
+        grid-gap: 8px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .slider__list {
+        grid-template-columns: 288px;
+        grid-template-rows: 264px;
+    }
+}

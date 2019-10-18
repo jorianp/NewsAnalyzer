@@ -1,1 +1,1 @@
-import './styles/analytics-page.css'
+import './css/analytics-page.css'

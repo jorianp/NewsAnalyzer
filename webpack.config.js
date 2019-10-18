@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 module.exports = {
@@ -9,7 +10,7 @@ module.exports = {
         analytics: './src/analytics.js' 
     },
     output: {
-        filename: '[name].[chunkhash].js',
+        filename: './scripts/[name].[chunkhash].js',
         path: path.resolve(__dirname, './dist')
     },
     module: {
@@ -27,7 +28,10 @@ module.exports = {
                             publicPath: '../',
                         }
                     },
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {importLoaders: 1, sourceMap: true}
+                    },
                     'postcss-loader'
                 ]
             },
@@ -49,6 +53,14 @@ module.exports = {
     plugins: [ 
         new MiniCssExtractPlugin({
             filename: './styles/[name].[contenthash].css'
+        }),
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: /\.css$/g,
+            cssProcessor: require('cssnano'),
+            cssProcessorPluginOptions: {
+                    preset: ['default'],
+            },
+            canPrint: true
         }),
         new HtmlWebpackPlugin({
             inject: false,

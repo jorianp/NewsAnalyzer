@@ -1,0 +1,39 @@
+.results__button {
+    width: 288px;
+    margin-top: 64px;
+    margin-bottom: 80px;
+    align-self: center;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1A1B22;
+
+    background: #FFFFFF;
+    border-radius: 80px;
+}
+
+.results__button:hover {
+    background: #E8E8E9;
+    opacity: 0.9;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .results__button {
+        width: 240px;
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .results__button {
+        width: 288px;
+        margin-top: 13px;
+        margin-bottom: 44px;
+    }
+}

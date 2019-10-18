@@ -1,0 +1,11 @@
+.daily__ox-value {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 104px;
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .daily__ox-value {
+        display: none;
+    }
+}

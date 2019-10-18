@@ -1,0 +1,20 @@
+@import url('./__link/nav__link.css');
+
+.nav {
+    width: 1235px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav {
+        width: 686px;
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .nav {
+        display: none;
+    }
+}

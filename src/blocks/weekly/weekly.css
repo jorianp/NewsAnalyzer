@@ -1,8 +1,0 @@
-@import url('./__content/weekly__content.css');
-@import url('./__number/weekly__number.css');
-@import url('./__text/weekly__text.css');
-@import url('./__title/weekly__title.css');
-
-.weekly {
-    width: 100%;
-}
