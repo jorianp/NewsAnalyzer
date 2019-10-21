@@ -1,5 +1,5 @@
 .preloader__load {
-    width: 280px;
+    max-width: 280px;
 
     margin: 0;
     margin-top: 24px;

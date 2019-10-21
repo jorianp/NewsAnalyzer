@@ -7,14 +7,14 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .commit__main {
-        width: 296px;
+        max-width: 296px;
         margin-top: 19px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
     .commit__main {
-        width: 246px;
+        max-width: 246px;
         margin-top: 11px;
     }
 }

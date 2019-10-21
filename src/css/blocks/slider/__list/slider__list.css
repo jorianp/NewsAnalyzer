@@ -5,6 +5,14 @@
     grid-gap: 16px;
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .slider__list {
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 260px;
+        grid-gap: 16px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .slider__list {
         grid-template-columns: 336px 336px;

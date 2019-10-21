@@ -7,14 +7,14 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .slider__main {
-        width: 686px;
+        max-width: 686px;
         margin-top: 32px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
     .slider__main {
-        width: 290px;
+        max-width: 290px;
         margin-top: 16px;
     }
 }

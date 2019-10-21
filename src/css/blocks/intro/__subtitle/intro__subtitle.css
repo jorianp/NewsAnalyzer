@@ -1,5 +1,5 @@
 .intro__subtitle {
-    width: 545px;
+    max-width: 545px;
     margin: 0;
     margin-top: 36px;
 
@@ -14,21 +14,21 @@
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .intro__subtitle {
-        width: 495px;
+        max-width: 495px;
         margin-top: 16px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .intro__subtitle {
-        width: 452px;
+        max-width: 452px;
         margin-top: 16px;
     }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
     .intro__subtitle {
-        width: 365px;
+        max-width: 365px;
         margin-top: 56px;
 
         font-size: 20px;
@@ -38,7 +38,7 @@
 
 @media (min-width: 320px) and (max-width: 424px) {
     .intro__subtitle {
-        width: 288px;
+        max-width: 288px;
         margin-top: 56px;
 
         font-size: 20px;

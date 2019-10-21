@@ -15,8 +15,8 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .card__text {
         display: block;
-        width: 192px;
-        height: 88px;
+        max-width: 192px;
+        max-height: 88px;
         text-overflow: ellipsis;
         overflow: hidden;
         margin-top: 10px;
@@ -26,7 +26,7 @@
 
 @media (min-width: 425px) and (max-width: 767px) {
     .card__text {
-        width: 356px;
+        max-width: 356px;
         margin-top: 10px;
         margin-bottom: 12px;
     }
@@ -34,9 +34,9 @@
 
 @media (min-width: 320px) and (max-width: 424px) {
     .card__text {
-        width: 256px;
+        max-width: 256px;
         display: block;
-        height: 88px;
+        max-height: 88px;
         overflow: hidden;
         text-overflow: ellipsis;
         margin-top: 10px;

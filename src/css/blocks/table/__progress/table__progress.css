@@ -1,5 +1,5 @@
 .table__progress {
-    width: 1131px;
+    max-width: 1131px;
     height: 24px;
     margin-left: 55px;
     display: flex;

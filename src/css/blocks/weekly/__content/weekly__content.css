@@ -1,19 +1,19 @@
 .weekly__content {
-    width: 1235px;
+    max-width: 1235px;
     margin: auto;
     margin-top: 80px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .weekly__content {
-        width: 686px;
+        max-width: 686px;
         margin-top: 64px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
     .weekly__content {
-        width: 290px;
+        max-width: 290px;
         margin-top: 16px;
     }
 }

@@ -1,5 +1,5 @@
 .clients__content {
-    width: 1235px;
+    max-width: 1235px;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 94px;
@@ -7,7 +7,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .clients__content {
-        width: 686px;
+        max-width: 686px;
         margin-top: 29.87px;
         margin-bottom: 56px;
     }
@@ -15,7 +15,7 @@
 
 @media (min-width: 320px) and (max-width: 424px) {
     .clients__content {
-        width: 290px;
+        max-width: 290px;
         margin-top: 16.46px;
         margin-bottom: 33px;
     }

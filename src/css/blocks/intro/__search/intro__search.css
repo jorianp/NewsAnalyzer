@@ -1,5 +1,5 @@
 .intro__search {
-    width: 608px;
+    max-width: 608px;
     height: 64px;
     position: relative;
     margin-top: 64px;
@@ -7,7 +7,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .intro__search {
-        width: 448px;
+        max-width: 448px;
         height: 56px;
         margin-top: 24px;
     }
@@ -15,7 +15,7 @@
 
 @media (min-width: 425px) and (max-width: 767px) {
     .intro__search {
-        width: 380px;
+        max-width: 380px;
         height: 56px;
         margin-top: 34px;
     }
@@ -23,7 +23,7 @@
 
 @media (min-width: 320px) and (max-width: 424px) {
     .intro__search {
-        width: 290px;
+        max-width: 290px;
         height: 56px;
         margin-top: 24px;
     }

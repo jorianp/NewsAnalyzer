@@ -1,5 +1,5 @@
 .clients__title {
-    width: 815px;
+    max-width: 815px;
 
     font-family: 'Roboto Slab';
     font-style: normal;
