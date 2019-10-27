@@ -8,7 +8,7 @@
     <meta name="description" content="Страница о себе">
     <title>About</title>
     <link rel="shortcut icon" href="images/favicon-about.png" type="image/png">
-    <link rel="stylesheet" href="./styles/about.22d73b27e2e1a67d22c1.css?860ff8decf5d75ec2462">
+    <link rel="stylesheet" href="./styles/about.54ed955278e091725c4b.css?b45b8d7ebf5d9bcd130c">
 </head>
 <body>
     <div class="page">
@@ -98,11 +98,11 @@
                         </svg>
                     </a>
                 </div>
-                <div class="slider__main">
-                    <button class="slider__button slider__button_left"><</button>
-                    <div class="slider__list">
+                <div class="slider__main swiper-container">
+                    <!-- <button class="slider__button slider__button_left"><</button> -->
+                    <div class="slider__list swiper-wrapper">
 
-                        <div class="commit">
+                        <!-- <div class="commit swiper-slide">
                             <p class="commit__date">14 августа, 2019</p>
                             <div class="commit__main">
                                 <img src="images/avatar1.png" alt="Аватар пользователя, сделавшего коммит" class="commit__avatar">
@@ -113,15 +113,13 @@
                             </div>
                             <p class="commit__text">Emmet (formerly Zen Coding) is a web-
                                     developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                        </div>
+                        </div> -->
 
                     </div>
-                    <button class="slider__button slider__button_right">></button>
-                </div>
-                <div class="slider__pagination">
-                    <button id="first" class="slider__pag"></button>
-                    <button id="second" class="slider__pag"></button>
-                    <button id="third" class="slider__pag"></button>
+                    <!-- <button class="slider__button slider__button_right">></button> -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
                 <a href="https://github.com" class="slider__link">
                     <button class="slider__button_hide button">Открыть в GitHub</button>
@@ -161,6 +159,25 @@
         </footer>
 
     </div>
-    <script src="./scripts/about.a53f82c2fdd7fe4030b8.js?860ff8decf5d75ec2462"></script>
+    <script src="./scripts/about.9960f29317444d277838.js?b45b8d7ebf5d9bcd130c"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 3,
+              spaceBetween: 16,
+              slidesPerGroup: 3,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          </script>
 </body>
 </html>
