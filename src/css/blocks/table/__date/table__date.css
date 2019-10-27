@@ -1,5 +1,7 @@
 .table__date {
+    width: 56px;
     margin: 0;
+    margin-top: 56px;
 
     font-family: 'Roboto';
     font-style: normal;

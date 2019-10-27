@@ -10,3 +10,11 @@
 @import url('./blocks/results/results.css');
 @import url('./blocks/button/button.css');
 @import url('./blocks/page/page.css');
+
+.results_hidden {
+    display: none;
+}
+
+.not-found_hide {
+    display: none;
+}

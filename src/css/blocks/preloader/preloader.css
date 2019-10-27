@@ -11,3 +11,7 @@
 
     background: #F5F6F7;
 }
+
+.preloader_hidden {
+    display: none;
+}

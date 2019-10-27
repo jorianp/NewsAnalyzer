@@ -3,6 +3,11 @@
     margin: 0;
     margin: auto;
     margin-top: 16px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 90px;
+    white-space: pre;
 
     font-family: 'Roboto';
     font-style: normal;

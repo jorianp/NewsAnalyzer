@@ -7,6 +7,8 @@
 @import url('./__text/commit__text.css');
 
 .commit {
+    width: 400px;
+    margin-left: 16px;
     background: #FFFFFF;
     border-radius: 16px;
     cursor: pointer;
