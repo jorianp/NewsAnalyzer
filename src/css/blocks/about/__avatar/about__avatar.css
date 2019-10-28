@@ -1,0 +1,38 @@
+.about__avatar {
+    width: 464px;
+    height: 464px;
+
+    background-image: url('../../../../images/avatar.png');
+    background-size: cover;
+    border-radius: 1000px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .about__avatar {
+        width: 344.1px;
+        height: 320px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about__avatar {
+        width: 232px;
+        height: 232px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .about__avatar {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .about__avatar {
+        width: 272px;
+        height: 272px;
+        margin: auto;
+    }
+}

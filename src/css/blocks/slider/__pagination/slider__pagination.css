@@ -1,0 +1,23 @@
+.slider__pagination {
+    max-width: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 48px;
+    padding-bottom: 80px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slider__pagination {
+        margin-top: 32px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .slider__pagination {
+        margin-top: 16px;
+        padding: 0;
+    }
+}

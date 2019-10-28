@@ -1,0 +1,19 @@
+.daily__content {
+    max-width: 1235px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .daily__content {
+        max-width: 686px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .daily__content {
+        max-width: 290px;
+        margin-top: 24px;
+    }
+}

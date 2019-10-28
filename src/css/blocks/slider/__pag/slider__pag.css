@@ -1,0 +1,15 @@
+.slider__pag {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 100%;
+    background: #D1D2D6;
+}
+
+#second {
+    background: #1A1B22;
+}

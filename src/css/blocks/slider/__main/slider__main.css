@@ -1,0 +1,20 @@
+.slider__main {
+    max-width: 1395px;
+    margin: auto;
+    display: flex;
+    margin-top: 64px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slider__main {
+        max-width: 686px;
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .slider__main {
+        max-width: 290px;
+        margin-top: 16px;
+    }
+}

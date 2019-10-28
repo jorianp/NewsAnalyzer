@@ -1,0 +1,104 @@
+.table__progress {
+    max-width: 1131px;
+    height: 24px;
+    margin-left: 55px;
+    display: flex;
+    background: #2F71E5;
+}
+
+.table__progress_mon {
+    width: 184px;
+}
+
+.table__progress_tue {
+    width: 256px;
+}
+
+.table__progress_wed {
+    width: 120px;
+}
+
+.table__progress_thu {
+    width: 424px;
+}
+
+.table__progress_fri {
+    width: 528px;
+}
+
+.table__progress_sat {
+    width: 816px;
+}
+
+.table__progress_sun {
+    width: 368px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .table__progress {
+        width: 686px;
+    }
+
+    .table__progress_mon {
+        width: 128.75px;
+    }
+    
+    .table__progress_tue {
+        width: 179.14px;
+    }
+    
+    .table__progress_wed {
+        width: 83.97px;
+    }
+    
+    .table__progress_thu {
+        width: 296.7px;
+    }
+    
+    .table__progress_fri {
+        width: 369.47px;
+    }
+    
+    .table__progress_sat {
+        width: 571px;
+    }
+    
+    .table__progress_sun {
+        width: 257.51px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .table__progress {
+        width: 208px;
+        margin-left: 27px;
+    }
+
+    .table__progress_mon {
+        width: 46.9px;
+    }
+    
+    .table__progress_tue {
+        width: 65.25px;
+    }
+    
+    .table__progress_wed {
+        width: 30.59px;
+    }
+    
+    .table__progress_thu {
+        width: 108.08px;
+    }
+    
+    .table__progress_fri {
+        width: 134.59px;
+    }
+    
+    .table__progress_sat {
+        width: 208px;
+    }
+    
+    .table__progress_sun {
+        width: 93.8px;
+    }
+}

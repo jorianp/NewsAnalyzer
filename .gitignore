@@ -1,0 +1,11 @@
+# local configs
+/node_modules
+/dist
+package-lock.json
+
+
+# apple gitignore
+.vscode
+*.DS_Store
+.AppleDouble
+.LSOverride

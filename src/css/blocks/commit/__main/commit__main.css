@@ -1,0 +1,20 @@
+.commit__main {
+    display: flex;
+    max-width: 352px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .commit__main {
+        max-width: 296px;
+        margin-top: 19px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .commit__main {
+        max-width: 246px;
+        margin-top: 11px;
+    }
+}

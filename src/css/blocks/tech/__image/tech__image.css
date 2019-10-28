@@ -1,0 +1,32 @@
+.tech__image {
+    cursor: pointer;
+    fill: #D1D2D6;
+}
+
+.tech__image_html:hover {
+    fill: #E44D26;
+}
+
+.tech__image_css:hover {
+    fill: #2965f1;
+}
+
+.tech__image_js:hover .js_bg {
+    fill: #F0DB4F;
+}
+
+.tech__image_js:hover .js_j {
+    fill: #323330;
+}
+
+.tech__image_js:hover .js_s {
+    fill: #323330;
+}
+
+.tech__image_webpack:hover {
+    fill: #8ED5FA;
+}
+
+.tech__image_webpack:hover .webpack_in{
+    fill: #1C78C0;
+}

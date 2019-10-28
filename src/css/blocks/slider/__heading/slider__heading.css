@@ -1,0 +1,21 @@
+.slider__heading {
+    max-width: 1235px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slider__heading {
+        max-width: 686px;
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .slider__heading {
+        max-width: 290px;
+        padding-top: 32px;
+    }
+}

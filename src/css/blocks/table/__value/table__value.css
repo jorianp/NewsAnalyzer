@@ -1,0 +1,16 @@
+.table__value {
+    margin: 0;
+    padding-left: 6px;
+    align-self: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
