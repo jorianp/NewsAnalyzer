@@ -1,5 +1,5 @@
 .commit__text {
-    max-width: 352px;
+    width: 352px;
     margin: 0;
     margin: auto;
     margin-top: 16px;
@@ -7,7 +7,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     height: 90px;
-    white-space: pre;
+    white-space: pre-line;
 
     font-family: 'Roboto';
     font-style: normal;

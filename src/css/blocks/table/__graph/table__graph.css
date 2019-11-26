@@ -4,3 +4,9 @@
     flex-direction: column;
     margin-left: 49px;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .table__graph {
+        margin-left: -8px;
+    }
+}

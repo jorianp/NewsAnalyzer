@@ -1,41 +1,90 @@
-// const total = document.querySelector('.weekly__number_total');
-// const inTitles = document.querySelector('.weekly__number_title');
-// const progressMon = document.querySelector('.table__progress_mon');
-// const progressTue = document.querySelector('.table__progress_tue');
-// const progressWed = document.querySelector('.table__progress_wed');
-// const progressThu = document.querySelector('.table__progress_thu');
-// const progressFri = document.querySelector('.table__progress_fri');
-// const progressSat = document.querySelector('.table__progress_sat');
-// const progressSun = document.querySelector('.table__progress_sun');
-// const valueMon = document.querySelector('.table__value_mon');
-// const valueTue = document.querySelector('.table__value_tue');
-// const valueWed = document.querySelector('.table__value_wed');
-// const valueThu = document.querySelector('.table__value_thu');
-// const valueFri = document.querySelector('.table__value_fri');
-// const valueSat = document.querySelector('.table__value_sat');
-// const valueSun = document.querySelector('.table__value_sun');
+import {ago, day, month, oneDay} from './time'
 
-document.querySelector('.weekly__title').textContent = `Вы спросили: «${localStorage.getItem('title').replace(/[\"]/gim, "")}»`
-document.querySelector('.weekly__number_total').textContent = localStorage.getItem('total').replace(/[\"]/gim, "");
-document.querySelector('.weekly__number_title').textContent = localStorage.getItem('titles').replace(/[\"]/gim, "");
+// Массив чисел дней
+const week = arrOfDays(ago);
+const days = daysWeek(ago);
+// Массив данных полученных из API через localStorage
+const data = JSON.parse(localStorage.getItem('data'));
 
-document.querySelector('.table__progress_mon').setAttribute('style', `width: ${localStorage.getItem('mon').replace(/[\"]/gim, "")}%`);
-document.querySelector('.table__value_mon').textContent = localStorage.getItem('mon').replace(/[\"]/gim, "");
+// Массив дат полученных из API
+const dayOfArticle = data.articles.map((el) => { return el.publishedAt });
+const renderedDate = dayOfArticle.map((el) => { return new Date(el).getDate() });
 
-document.querySelector('.table__progress_tue').setAttribute('style', `width: ${localStorage.getItem('tue').replace(/[\"]/gim, "")}%`);
-document.querySelector('.table__value_tue').textContent = localStorage.getItem('tue').replace(/[\"]/gim, "");
 
-document.querySelector('.table__progress_wed').setAttribute('style', `width: ${localStorage.getItem('wed').replace(/[\"]/gim, "")}%`);
-document.querySelector('.table__value_wed').textContent = localStorage.getItem('wed').replace(/[\"]/gim, "");
+// Количество заголовков содердащих поисковый запрос
+const countTitles = 
+    data.articles.filter(el => {
+        return el.title.toLowerCase().includes(`${localStorage.getItem('query').toLowerCase()}`) }
+    ).length;
 
-document.querySelector('.table__progress_thu').setAttribute('style', `width: ${localStorage.getItem('thu').replace(/[\"]/gim, "")}%`);
-document.querySelector('.table__value_thu').textContent = localStorage.getItem('thu').replace(/[\"]/gim, "");
+// Получение массива чисел дней
+function arrOfDays(a) {
+    let arr = [];
+    for (let i = 0; i < 7; i += 1) {
+        arr.push(new Date(ago.getTime() + oneDay*i).getDate());
+    }
+    return arr
+}
 
-document.querySelector('.table__progress_fri').setAttribute('style', `width: ${localStorage.getItem('fri').replace(/[\"]/gim, "")}%`);
-document.querySelector('.table__value_fri').textContent = localStorage.getItem('fri').replace(/[\"]/gim, "");
+// Получение массива дней недели 
+function daysWeek(a) {
+    let arr = [];
+    for (let i = 0; i < 7; i += 1) {
+        arr.push(new Date(ago.getTime() + oneDay*i).getDay());
+    }
+    return arr
+}
 
-document.querySelector('.table__progress_sat').setAttribute('style', `width: ${localStorage.getItem('sat').replace(/[\"]/gim, "")}%`);
-document.querySelector('.table__value_sat').textContent = localStorage.getItem('sat').replace(/[\"]/gim, "");
+// Количество новостей за каждый из дней
+function newsInDay(n) {
+    return renderedDate.filter((el) => {
+        return el == n
+    }).length
+}
 
-document.querySelector('.table__progress_sun').setAttribute('style', `width: ${localStorage.getItem('sun').replace(/[\"]/gim, "")}%`);
-document.querySelector('.table__value_sun').textContent = localStorage.getItem('sun').replace(/[\"]/gim, "");
+// День недели 
+function dayOfWeek() {
+    return days.map((el) => { return day[el] })
+}
+
+
+// Общая информация
+document.querySelector('.weekly__title').textContent = `Вы спросили: «${localStorage.getItem('query')}»`
+document.querySelector('.weekly__number_total').textContent = data.totalResults;
+document.querySelector('.weekly__number_title').textContent = countTitles;
+document.querySelector('.daily__name').textContent = `Дата (${month[new Date().getMonth()]})`;
+
+// Первый день в списке
+document.querySelector('.table__progress_mon').setAttribute('style', `width: ${newsInDay(week[0])}%`);
+document.querySelector('.table__value_mon').textContent = newsInDay(week[0]);
+document.querySelector('.first-day').textContent = `${week[0]}, ${dayOfWeek()[0]}`;
+
+// Второй день в списке
+document.querySelector('.table__progress_tue').setAttribute('style', `width: ${newsInDay(week[1])}%`);
+document.querySelector('.table__value_tue').textContent = newsInDay(week[1]);
+document.querySelector('.second-day').textContent = `${week[1]}, ${dayOfWeek()[1]}`;
+
+// Третий день в списке
+document.querySelector('.table__progress_wed').setAttribute('style', `width: ${newsInDay(week[2])}%`);
+document.querySelector('.table__value_wed').textContent = newsInDay(week[2]);
+document.querySelector('.third-day').textContent = `${week[2]}, ${dayOfWeek()[2]}`;
+
+// Четвертый день в списке
+document.querySelector('.table__progress_thu').setAttribute('style', `width: ${newsInDay(week[3])}%`);
+document.querySelector('.table__value_thu').textContent = newsInDay(week[3]);
+document.querySelector('.fourth-day').textContent = `${week[3]}, ${dayOfWeek()[3]}`;
+
+// Пятый день в списке
+document.querySelector('.table__progress_fri').setAttribute('style', `width: ${newsInDay(week[4])}%`);
+document.querySelector('.table__value_fri').textContent = newsInDay(week[4]);
+document.querySelector('.fifth-day').textContent = `${week[4]}, ${dayOfWeek()[4]}`;
+
+// Шестой день в списке
+document.querySelector('.table__progress_sat').setAttribute('style', `width: ${newsInDay(week[5])}%`);
+document.querySelector('.table__value_sat').textContent = newsInDay(week[5]);
+document.querySelector('.sixth-day').textContent = `${week[5]}, ${dayOfWeek()[5]}`;
+
+// Седьмой день в списке
+document.querySelector('.table__progress_sun').setAttribute('style', `width: ${newsInDay(week[6])}%`);
+document.querySelector('.table__value_sun').textContent = newsInDay(week[6]);
+document.querySelector('.seventh-day').textContent = `${week[6]}, ${dayOfWeek()[6]}`;
