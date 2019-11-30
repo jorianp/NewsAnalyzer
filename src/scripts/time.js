@@ -1,6 +1,6 @@
 const date = new Date();
 const oneDay = 24 * 60 * 60 * 1000;
-const weekAgoTimestamp = 6 * 24 * 60 * 60 * 1000;
+const weekAgoTimestamp = 6 * oneDay;
 const ago = new Date(date.getTime() - weekAgoTimestamp);
 const now = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
 const sevenDaysAgo = `${ago.getFullYear()}-${ago.getMonth() + 1}-${ago.getDate()}`;

@@ -15,7 +15,7 @@ function githubApi(renderCommit) {
             renderCommit(data)
         })
         .catch((err) => {
-            console.error(err);
+            commits.renderError(err);
         })
         .finally(() => {
         });

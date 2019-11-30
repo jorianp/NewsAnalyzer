@@ -3,6 +3,9 @@ const more = document.querySelector('.results__button');
 const results = document.querySelector('.results');
 const list = document.querySelector('.results__list');
 const searchButton = document.querySelector('.intro__search-button');
+const notFound = document.querySelector('.not-found');
+const preloader = document.querySelector('.preloader');
+const inputValue = document.querySelector('.intro__input');
 
 export { more, results };
 
@@ -10,7 +13,7 @@ export default class NewsList {
     constructor() {
         this.addToStorage = this.addToStorage.bind(this);
         this.render = this.render.bind(this);
-        this.processing = this.processing.bind(this);
+        this.verification = this.verification.bind(this);
         this.remove = this.remove.bind(this);
         this.preloader = this.preloader.bind(this);
         this.renderError = this.renderError.bind(this);
@@ -21,10 +24,10 @@ export default class NewsList {
         more.addEventListener('click', this.render);
     }
 
-    processing(data) {
+    verification(data) {
         this.data = data;
         if (this.data.articles.length === 0) {
-            this.renderNotFound();
+            this._renderNotFound();
         } else if (this.data.articles.length > 3) {
             this.renderNotFoundHide();
             more.classList.remove('button_disabled');
@@ -41,12 +44,12 @@ export default class NewsList {
     }
 
     render() {
-        this.processing(this.data);
+        this.verification(this.data);
     }
 
     addToStorage(data) {
         localStorage.setItem('data', JSON.stringify(data));
-        this.processing(JSON.parse(localStorage.getItem('data')));
+        this.verification(JSON.parse(localStorage.getItem('data')));
     }
 
     createCard(data) {
@@ -87,7 +90,6 @@ export default class NewsList {
     remove() {
         localStorage.clear();
         more.removeEventListener('click', this.render);
-        const list = document.querySelector('.results__list');
         while (list.firstChild) {
             list.removeChild(list.firstChild);
         }
@@ -97,21 +99,20 @@ export default class NewsList {
     }
 
     preloader() {
-        const preloader = document.querySelector('.preloader');
         preloader.classList.remove('preloader_hidden');
         results.classList.add('results_hidden');
         searchButton.setAttribute('disabled', true);
+        inputValue.setAttribute('disabled', true);
         this.renderNotFoundHide();
     }
 
     preloaderHidden() {
-        const preloader = document.querySelector('.preloader');
         preloader.classList.add('preloader_hidden');
+        inputValue.removeAttribute('disabled');
         searchButton.removeAttribute('disabled');
     }
 
     renderError(err) {
-        const notFound = document.querySelector('.not-found');
         const notFoundTitle = document.querySelector('.not-found__title');
         const notFoundSubtitle = document.querySelector('.not-found__subtitle');
         notFound.classList.remove('not-found_hide');
@@ -122,8 +123,7 @@ export default class NewsList {
         localStorage.clear();
     }
 
-    renderNotFound() {
-        const notFound = document.querySelector('.not-found');
+    _renderNotFound() {
         notFound.classList.remove('not-found_hide');
         results.classList.add('results_hidden');
 
@@ -131,7 +131,6 @@ export default class NewsList {
     }
 
     renderNotFoundHide() {
-        const notFound = document.querySelector('.not-found');
         notFound.classList.add('not-found_hide');
     }
 }

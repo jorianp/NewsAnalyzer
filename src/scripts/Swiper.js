@@ -42,10 +42,18 @@ export default class Commits {
 
             wrapper.appendChild(commitCard);
         });
-        this.ourSlider();
+        this._ourSlider();
       }
 
-      ourSlider() {
+      renderError(err) {
+        const notFoundTitle = document.querySelector('.not-found__title');
+        const notFoundSubtitle = document.querySelector('.not-found__subtitle');
+        notFound.classList.remove('not-found_hide');
+        notFoundTitle.textContent = `${err}`;
+        notFoundSubtitle.textContent = 'Кажется что-то пошло не так...';
+      }
+
+      _ourSlider() {
         const swiper = new Swiper('.swiper-container', {
             spaceBetween: 16,
             centeredSlides: true,

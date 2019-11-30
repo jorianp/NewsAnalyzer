@@ -18,6 +18,7 @@ export default class Api {
         fetch(`${apiData.url}q=${query}&${apiData.urlParam}`)
             .then(function (res) {
                 if (res.ok) {
+                    localStorage.setItem('query', query);
                     return res.json();
                 }
                 return Promise.reject(`Код ошибки: ${res.status}`);
@@ -38,9 +39,9 @@ export default class Api {
 
 
 function animation() {
-    let coordY = document.querySelector('#load').getBoundingClientRect().top + window.pageYOffset;
-    let scroller = setInterval(function() {
-        let scrollBy = coordY / framesCount;
+    const coordY = document.querySelector('#load').getBoundingClientRect().top + window.pageYOffset;
+    const scroller = setInterval(function() {
+        const scrollBy = coordY / framesCount;
         if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
             window.scrollBy(0, scrollBy);
         } else {
@@ -51,9 +52,9 @@ function animation() {
 }
 
 function animationNot() {
-    let coordY = document.querySelector('#not-found').getBoundingClientRect().top + window.pageYOffset;
-    let scroller = setInterval(function() {
-        let scrollBy = coordY / framesCount;
+    const coordY = document.querySelector('#not-found').getBoundingClientRect().top + window.pageYOffset;
+    const scroller = setInterval(function() {
+        const scrollBy = coordY / framesCount;
         if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
             window.scrollBy(0, scrollBy);
         } else {
