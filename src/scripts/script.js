@@ -21,7 +21,7 @@ if (localData) {
 function search(event) {
     event.preventDefault();
     const query = document.querySelector('.intro__input').value.trim();
-    // newsList.remove();
+    newsList.remove();
     new Api().news(query, newsList.preloader, newsList.addToStorage, newsList.preloaderHidden, newsList.renderError);
     newsList.request();
 }
