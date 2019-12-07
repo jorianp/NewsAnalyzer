@@ -5,7 +5,12 @@
 
     display: grid;
     grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 576px;
     grid-gap: 16px;
+}
+
+.results__list_bot {
+    margin-bottom: 80px;
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -24,6 +29,9 @@
         grid-template-columns: 224px 224px 224px;
         grid-gap: 6px;
     }
+    .results__list_bot {
+        margin-bottom: 40px;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -34,6 +42,9 @@
         grid-template-columns: 380px;
         grid-gap: 13px;
     }
+    .results__list_bot {
+        margin-bottom: 44px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
@@ -43,5 +54,8 @@
         grid-template-rows: 446px 446px 446px;
         grid-template-columns: 288px;
         grid-gap: 13px;
+    }
+    .results__list_bot {
+        margin-bottom: 44px;
     }
 }

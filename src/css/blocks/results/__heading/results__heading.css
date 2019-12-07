@@ -1,6 +1,7 @@
 .results__heading {
     width: 1235px;
     margin: auto;
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
 }

@@ -1,7 +1,7 @@
 .table__progress {
     max-width: 1131px;
     height: 24px;
-    margin-left: 55px;
+    margin-top: 56px;
     display: flex;
     background: #2F71E5;
 }
@@ -68,7 +68,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .table__progress {
         width: 208px;
         margin-left: 27px;

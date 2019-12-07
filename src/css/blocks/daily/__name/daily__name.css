@@ -19,7 +19,7 @@
     margin-left: 45px;
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .daily__name_ox {
         max-width: 176px;
         margin-left: 16px;

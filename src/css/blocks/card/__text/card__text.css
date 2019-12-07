@@ -1,4 +1,9 @@
 .card__text {
+    display: block;
+    max-height: 88px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
     margin: 0;
     margin-top: 16px;
     margin-bottom: 20px;

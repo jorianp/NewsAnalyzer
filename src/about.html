@@ -98,31 +98,29 @@
                         </svg>
                     </a>
                 </div>
-                <div class="slider__main">
-                    <button class="slider__button slider__button_left"><</button>
-                    <div class="slider__list">
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
 
-                        <div class="commit">
-                            <p class="commit__date">14 августа, 2019</p>
-                            <div class="commit__main">
-                                <img src="<%=require('./images/avatar1.png')%>" alt="Аватар пользователя, сделавшего коммит" class="commit__avatar">
-                                <div class="commit__head">
-                                    <p class="commit__name">Антон Долинин</p>
-                                    <p class="commit__mail">anton@yandex.ru</p>
+                            <!-- <div class="swiper-slide">
+                                <p class="commit__date">14 августа, 2019</p>
+                                <div class="commit__main">
+                                    <img src="<%=require('./images/avatar1.png')%>" alt="Аватар пользователя, сделавшего коммит" class="commit__avatar">
+                                    <div class="commit__head">
+                                        <p class="commit__name">Антон Долинин</p>
+                                        <p class="commit__mail">anton@yandex.ru</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <p class="commit__text">Emmet (formerly Zen Coding) is a web-
-                                    developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                        </div>
+                                <p class="commit__text">Emmet (formerly Zen Coding) is a web-
+                                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                            </div> -->
 
-                    </div>
-                    <button class="slider__button slider__button_right">></button>
-                </div>
-                <div class="slider__pagination">
-                    <button id="first" class="slider__pag"></button>
-                    <button id="second" class="slider__pag"></button>
-                    <button id="third" class="slider__pag"></button>
-                </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
                 <a href="https://github.com" class="slider__link">
                     <button class="slider__button_hide button">Открыть в GitHub</button>
                 </a>

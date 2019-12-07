@@ -4,12 +4,10 @@
 @import url('./__value/table__value.css');
 
 .table {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 56px; 
+    display: flex;
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .table {
         grid-gap: 24px;
         margin-top: 18px;
